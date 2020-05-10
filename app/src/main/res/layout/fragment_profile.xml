@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/back_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:padding="10sp"
+                android:tint="@android:color/white"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                app:srcCompat="?attr/actionModeCloseDrawable"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10sp"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/back_button"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+
+    <TextView
+        android:id="@+id/CreateNewTask"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Create New Task"
+        android:textSize="16sp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Topic"
+        android:layout_weight="1"
+        />
+
+    <EditText
+        android:id="@+id/Title_edit"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:ems="10"
+        android:inputType="text"
+        android:layout_weight="1"
+        />
+
+    <TextView
+        android:id="@+id/Description"
+        android:layout_width="match_parent"
+        android:layout_height= "0dp"
+        android:layout_weight="1"
+        android:text="Description"/>
+
+    <EditText
+        android:id="@+id/Description_edit"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:ems="10"
+        android:inputType="text"
+        android:layout_weight="1"
+        />
+
+    <LinearLayout
+        android:id="@+id/TimeandDate"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:weightSum="6">
+
+        <TextView
+            android:id="@+id/DATE"
+            android:layout_width="0dp"
+            android:layout_height= "match_parent"
+            android:layout_weight="1"
+            android:text="Date"
+            />
+
+        <TextView
+            android:id="@+id/Date"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:layout_weight="1"
+            />
+
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/button_Datepicker"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            app:layout_constraintRight_toRightOf="parent"
+            app:srcCompat="@android:drawable/presence_away"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/TIME"
+            android:layout_width="0dp"
+            android:layout_height= "match_parent"
+            android:layout_weight="1"
+            android:text="Time"
+            />
+
+        <TextView
+            android:id="@+id/Time"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:inputType="datetime"
+            android:layout_weight="1"
+            />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/button_timepicker"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            app:layout_constraintRight_toRightOf="parent"
+            app:srcCompat="@android:drawable/presence_away"
+            tools:ignore="ContentDescription" />
+
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/AddButton"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Add" />
+
+    <Button
+        android:id="@+id/DeleteButton"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Delete" />
+
+    <Button
+        android:id="@+id/EditButton"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Edit" />
+
+</LinearLayout>
