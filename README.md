@@ -1,6 +1,12 @@
 # CSC642_ASMT5
 
-This project is for CSC642 Assignment5. There are dugs in database, which will be fixed later. 
-Adding, editing and deleting button is not functioning so far.
+This project is for CSC642 Assignment5. 
+
+Database is not working so that "Add", "Delete", "Edit" function in app is not functioning . 
+Sample data is made in app to perform its basic funtions.
+
+Notification function is not set up by this time.
+
+Otherthan that, all necessary interactions of app perform normally.
 
 Video link: https://youtu.be/Ik1-QuOPXKo.
