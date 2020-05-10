@@ -9,4 +9,6 @@ Notification function is not set up by this time.
 
 Otherthan that, all necessary interactions of app perform normally.
 
+All project file is also compressed in sp.zip. 
+
 Video link: https://youtu.be/Ik1-QuOPXKo.
